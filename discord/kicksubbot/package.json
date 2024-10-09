@@ -1,0 +1,28 @@
+{
+  "name": "dc-kicksubbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/uuid": "^10.0.0",
+    "gts": "^5.3.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5",
+    "kick-chat": "file:../../packages/kick-chat",
+    "reflect-metadata": "^0.2.2",
+    "stream-logger": "file:../../packages/stream-logger",
+    "typeorm": "^0.3.20",
+    "uuid": "^10.0.0"
+  }
+}
