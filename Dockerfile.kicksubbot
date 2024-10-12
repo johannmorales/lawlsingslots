@@ -4,4 +4,4 @@ COPY . .
 RUN npm install
 COPY . .
 RUN  npm run compile --workspace=packages/stream-logger
-CMD ["npm", "start","--workspace=discord/kicksubbot"]
+CMD ["npm", "run","compile"]
