@@ -51,7 +51,6 @@ const http = async (url, options = {}, cacheKey = null, ttl = DEFAULT_TTL) => {
         return data;
     }
     catch (error) {
-        console.error('Fetch error:', error);
         throw error;
     }
 };

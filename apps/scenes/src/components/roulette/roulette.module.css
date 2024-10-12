@@ -1,0 +1,11 @@
+.roulette-wheel-bet-number {
+  @apply relative flex justify-center items-start  text-white pt-1 w-20 h-40;
+}
+
+.slice {
+  @apply absolute h-1/2 translate-x-1/2;
+}
+
+.slice > label {
+  @apply tracking-tighter leading-none absolute top-0 py-[5px] mx-auto w-full text-center text-white text-xs font-semibold;
+}

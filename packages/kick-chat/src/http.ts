@@ -57,7 +57,6 @@ export const http = async (
     }
     return data;
   } catch (error) {
-    console.error('Fetch error:', error);
     throw error;
   }
 };

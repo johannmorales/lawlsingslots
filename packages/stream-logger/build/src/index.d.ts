@@ -6,7 +6,8 @@ type Log = {
     message: string;
 };
 export declare function createStreamLogger(label: string): {
-    info: ({ message, ...other }: Log, ...args: any[]) => void;
+    info: (log: Log) => void;
+    error: (log: Log) => void;
 };
 export {};
 //# sourceMappingURL=index.d.ts.map

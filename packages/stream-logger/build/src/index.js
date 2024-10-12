@@ -2,6 +2,24 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createStreamLogger = createStreamLogger;
 const winston_1 = require("winston");
+function addTags(message, obj, tags) {
+    let result = message;
+    for (let i = 0; i < tags.length; i++) {
+        const tag = tags[i];
+        const component = createTag(obj, tag[0], tag[1]);
+        if (component)
+            result = component + result;
+    }
+    return result;
+}
+function createTag(obj, tag, name) {
+    if (obj[tag] === undefined) {
+        return null;
+    }
+    else {
+        return `[${name}:${obj[tag]}] `;
+    }
+}
 function createStreamLogger(label) {
     const logger = (0, winston_1.createLogger)({
         level: 'debug',
@@ -12,18 +30,21 @@ function createStreamLogger(label) {
         transports: new winston_1.transports.Console(),
     });
     return {
-        info: ({ message, ...other }, ...args) => {
-            let builtMessage = message;
-            if (other.kickUsername) {
-                builtMessage = `[kick:${other.kickUsername}] ` + builtMessage;
-            }
-            if (other.discordUsername) {
-                builtMessage = `[discord:${other.discordUsername}] ` + builtMessage;
-            }
-            if (other.interactionId) {
-                builtMessage = `[interactionId:${other.interactionId}] ` + builtMessage;
-            }
-            logger.info(builtMessage);
+        info: (log) => {
+            const { message } = log;
+            logger.info(addTags(message, log, [
+                ['kickUsername', 'kick'],
+                ['discordUsername', 'dc'],
+                ['interactionId', 'id'],
+            ]));
+        },
+        error: (log) => {
+            const { message } = log;
+            logger.error(addTags(message, log, [
+                ['kickUsername', 'kick'],
+                ['discordUsername', 'dc'],
+                ['interactionId', 'id'],
+            ]));
         },
     };
 }
