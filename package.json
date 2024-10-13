@@ -2,6 +2,7 @@
   "name": "lawlsingslots",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://johannmorales.github.io/promesaslitoxx/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
