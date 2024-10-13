@@ -4,7 +4,7 @@ services:
   kicksubbot:
     build:
       context: .
-      dockerfile: Dockerfile.kicksubbot
+      dockerfile: Dockerfile
     working_dir: /app
     command: npm start --workspace=discord/kicksubbot
     env_file:

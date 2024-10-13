@@ -1,0 +1,21 @@
+{
+  "name": "slots",
+  "version": "1.0.0",
+  "main": "build/src/index.js",
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "gts": "^5.3.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "update": "tsx src/update.ts",
+    "compile": "npm run update && tsc --declarationMap"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "stream-logger": "file:../stream-logger"
+  }
+}

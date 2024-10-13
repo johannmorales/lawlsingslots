@@ -18,7 +18,7 @@ const bottomNodes = [
     Kick y 200 follows en X
   </label>,
   <label>
-    Torneo mensual entre los 10 primeros de top puntos y watchtime{" "}
+    Torneo mensual entre los 10 primeros en puntos y watchtime{" "}
     <span className="text-gamdom">!top</span>
   </label>,
 ];
@@ -53,9 +53,8 @@ export const Layout = ({}) => {
           <li className="flex gap-2 items-center">
             <img src="/gamdom/logo.png" className="h-4" />
             <label>
-              Sorteos de <span className="text-gamdom">$75</span> todos los días
-              con el código <span className="text-gamdom">lawlsing</span> |
-              !gamdom
+              Sorteos todos los días entre cuentas registradas con el código{" "}
+              <span className="text-gamdom">lawlsing</span> | !gamdom
             </label>
           </li>
         </ul>

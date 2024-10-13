@@ -1,0 +1,10 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "root",
+  "password": "postgres",
+  "database": "lawlsingslots",
+  "synchronize": true,
+  "entities": ["dist/**/*.entity{.ts,.js}"]
+}

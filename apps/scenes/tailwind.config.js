@@ -10,6 +10,7 @@ export default {
       },
       colors: {
         gamdom: "#02ff85",
+        gold: "#FFD700",
       },
     },
   },

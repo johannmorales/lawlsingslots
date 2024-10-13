@@ -19,7 +19,7 @@ body,
 }
 
 .guideline {
-  @apply border border-red-500 bg-red-500 bg-opacity-50;
+  @apply border border-gamdom bg-gamdom bg-opacity-50 p-4 box-border;
 }
 
 .text-shadow-light {
@@ -34,7 +34,42 @@ body,
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-/* 
 .guideline {
   @apply border-0 bg-transparent;
-} */
+}
+
+.loop-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.loop-content {
+  animation: scroll-vertical 7s linear infinite;
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-101%);
+  }
+}
+
+.overflown {
+  max-height: calc(587px);
+}
+
+.scroll-container {
+  height: 100%; /* Set the height of the scrolling area */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* For positioning children */
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.scroll-item {
+}

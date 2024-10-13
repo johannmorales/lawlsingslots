@@ -1,6 +1,11 @@
 export type KickUserId = number;
 export type Url = string;
 export type KickTimestamp = string;
+export enum Currency {
+  USD = 'USD',
+  NGN = 'NGN',
+  NZD = 'NZD',
+}
 export type KickUserBadge = {
   type: 'sub_gifter' | 'broadcaster' | 'subscriber' | 'founder' | 'moderator';
   text: string;
