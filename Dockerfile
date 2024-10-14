@@ -12,4 +12,6 @@ RUN npm run compile --workspace=packages/stream-types
 RUN npm install --workspace=packages/kick
 RUN npm run compile --workspace=packages/kick
 
+RUN npm install --workspace=discord/kicksubbot
+
 CMD ["npm", "run","compile"]
