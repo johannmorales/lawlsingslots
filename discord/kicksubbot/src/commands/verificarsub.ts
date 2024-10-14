@@ -10,7 +10,7 @@ import {
 import {v4 as uuidv4} from 'uuid';
 import {AppDataSource} from '../db';
 import {DiscordUser} from '../entities/DiscordUser';
-import {getKickChannel, getKickIsUserSub, kickChatBan} from 'kick-chat';
+import {getKickChannel, getKickIsUserSub, kickChatBan} from 'kick';
 import {KickChannel} from '../entities/KickChannel';
 import {logger} from '../logger';
 

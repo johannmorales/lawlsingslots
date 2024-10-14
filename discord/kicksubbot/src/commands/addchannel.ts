@@ -2,7 +2,6 @@ import {CommandInteraction, SlashCommandBuilder} from 'discord.js';
 import {v4 as uuidv4} from 'uuid';
 import {AppDataSource} from '../db';
 import {DiscordUser} from '../entities/DiscordUser';
-import {getKickChannel} from 'kick-chat';
 import {KickChannel} from '../entities/KickChannel';
 
 export const data = new SlashCommandBuilder()

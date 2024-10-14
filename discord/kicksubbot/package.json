@@ -19,7 +19,7 @@
     "better-sqlite3": "^9.6.0",
     "discord.js": "^14.16.2",
     "dotenv": "^16.4.5",
-    "kick-chat": "file:../../packages/kick-chat",
+    "kick": "file:../../packages/kick",
     "reflect-metadata": "^0.2.2",
     "stream-logger": "file:../../packages/stream-logger",
     "typeorm": "^0.3.20",
