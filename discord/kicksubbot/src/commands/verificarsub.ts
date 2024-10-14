@@ -169,6 +169,7 @@ export async function execute(
       discordUsername: interaction.user.displayName,
       message: error.message,
     });
+    console.error(error);
     return interaction.editReply({
       content: 'Error desconocido. Vuelve a intentarlo',
     });
