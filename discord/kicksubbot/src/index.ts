@@ -11,13 +11,16 @@ import {AppDataSource} from './db';
 import {execute} from './commands/verificarsub';
 import {DiscordUser} from './entities/DiscordUser';
 import {logger} from './logger';
-
+import {deployCommands} from './deploy-commands';
 const client = new Client({
   intents: ['Guilds', 'GuildMessages', 'DirectMessages'],
 });
 
 client.once('ready', async li => {
   await AppDataSource.initialize();
+  for (const [guildId] of li.guilds.cache) {
+    await deployCommands({guildId});
+  }
   logger.info({message: 'Running! 🚀'});
   // const channel = li.channels.cache.get(process.env.CHANNEL_ID!);
   // const confirm = new ButtonBuilder()

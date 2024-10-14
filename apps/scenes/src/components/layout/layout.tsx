@@ -15,7 +15,7 @@ const Navbar = ({ children }: { children: ReactNode }) => {
 const bottomNodes = [
   <label>
     Giveaway de <span className="text-gamdom">$500</span> a los 2000 follows en
-    Kick y 200 follows en X
+    Kick y 200 follows en X <span className="text-gamdom">!sorteo</span>
   </label>,
   <label>
     Torneo mensual entre los 10 primeros en puntos y watchtime{" "}
@@ -29,12 +29,15 @@ const commandNodes = [
     <li>!tts22</li>
     <li>!ttsmasha</li>
     <li>!ttselm</li>
+    <li>!ttsxokas</li>
+    <li>!ttsdalas</li>
   </ul>,
   <ul className="flex gap-4 items-center justify-end">
     <li>!puntos</li>
     <li>!dado {"<apuesta>"}</li>
     <li>!ruletarusa {"<apuesta>"}</li>
     <li>!godmode</li>
+    <li>!tip {"<usuario> <cantidad>"}</li>
   </ul>,
 ];
 
@@ -54,7 +57,7 @@ export const Layout = ({}) => {
             <img src="/gamdom/logo.png" className="h-4" />
             <label>
               Sorteos todos los días entre cuentas registradas con el código{" "}
-              <span className="text-gamdom">lawlsing</span> | !gamdom
+              <span className="text-gamdom">lawlsing</span> | !gamdom | !default
             </label>
           </li>
         </ul>

@@ -54,37 +54,51 @@ function Index() {
       </div>
       <div className="guideline"></div>
       <div>
-        <div className="flex justify-between w-full gap-2 h-full items-center">
-          <div>
-            <img src="/gamdom/promo.png" className="max-h-40" />
-          </div>
-          <div className="h-full flex items-center">
-            <video
-              className="max-h-40"
-              autoPlay
-              loop
-              muted
-              src="/adhd/minecraft.webm"
-            />
-          </div>
-          <div className="h-full flex items-center">
-            <video
-              className="max-h-40"
-              autoPlay
-              loop
-              muted
-              src="/adhd/tunnel.webm"
-            />
-          </div>
-          <div className="h-full flex items-center">
-            <video
-              className="max-h-40"
-              autoPlay
-              loop
-              muted
-              src="/adhd/fruits.webm"
-            />
-          </div>
+        <div className="flex justify-between w-full max-w-full overflow-hidden  gap-2 items-center h-40">
+          <img src="/gamdom/promo.png" className=" max-h-full" />
+          <video
+            className="max-h-full"
+            autoPlay
+            loop
+            muted
+            src="/adhd/vertical-pendulum.mp4"
+          />
+          {/* <video
+            className="max-h-full"
+            autoPlay
+            loop
+            muted
+            src="/adhd/vertical-wave.mp4"
+          /> */}
+          <video
+            className="max-h-full"
+            autoPlay
+            loop
+            muted
+            src="/adhd/tunnel.webm"
+          />
+          <video
+            className="max-h-full"
+            autoPlay
+            loop
+            muted
+            src="/adhd/vertical-wave.mp4"
+          />
+
+          {/* <video
+            className="max-h-full"
+            autoPlay
+            loop
+            muted
+            src="/adhd/vertical-wave.mp4"
+          /> */}
+          {/* <video
+            className="max-h-full"
+            autoPlay
+            loop
+            muted
+            src="/adhd/fruits.webm"
+          /> */}
         </div>
       </div>
       <div className="guideline"></div>
