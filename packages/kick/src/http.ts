@@ -51,6 +51,8 @@ export const http = async (
         'cache-control': 'max-age=0',
       },
     });
+    const raw = await response.text();
+    console.log('raw', raw);
     const data = await response.json();
     if (cacheKey) {
       setCache(cacheKey, data, ttl);
